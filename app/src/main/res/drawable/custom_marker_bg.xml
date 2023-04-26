@@ -1,0 +1,14 @@
+<!-- custom_marker_bg.xml -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FF00E1EF" />
+    <corners android:radius="8dp" />
+    <padding
+        android:top="8dp"
+        android:bottom="8dp"
+        android:left="12dp"
+        android:right="12dp" />
+    <stroke
+        android:color="#FFFFFF"
+        android:width="1sp" />
+</shape>

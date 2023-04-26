@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".Fragments.AboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:onClick="back_to_home"/>
+    </LinearLayout>
+        <!-- Background Image -->
+
+
+        <!-- Content Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- App Logo -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/app_icon"
+                android:elevation="10sp"
+                android:layout_gravity="center_horizontal" />
+
+            <!-- App Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stoxact"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <!-- Developer Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer: Muneer"
+                android:textColor="#707070"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <!-- Description -->
+            <TextView
+                android:background="@drawable/card_graph"
+                android:padding="30sp"
+                android:layout_margin="10sp"
+                android:elevation="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stoxact is a modern inventory management app designed to help businesses keep track of their stock levels, sales, and orders. With its intuitive user interface and powerful features, Stoxact makes managing inventory a breeze.
+                \nDeveloped by Muneer, an experienced Android developer, Stoxact is the perfect tool for businesses of all sizes to streamline their inventory management processes."
+                android:textColor="#707070"
+                android:textSize="14sp"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+
+
+
+</FrameLayout>

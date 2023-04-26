@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name" translatable="true">Stoxact</string>
+    <string name="image" translatable="true">Image</string>
+    <string name="setup_completed" translatable="true">Enjoy Stoxact</string>
+    <string name="slider_string3" translatable="true">Let All your Inventory Managed and Start new journey with Stoxact</string>
+    <string name="welcome_to_stoxact" translatable="true">Welcome to stoXact</string>
+    <string name="low_stocks" translatable="true">Low Stocks Alert</string>
+    <string name="slider_string1" translatable="true">This app is an inventory management system designed for businesses to monitor and manage their stock levels.</string>
+    <string name="slider_string2" translatable="true">Stoxact will notify you when stocks are getting low</string>
+    <string name="get_started" translatable="true">Get Started</string>
+    <string name="tag_line" translatable="true">Let’s manage your stock and keep track of your sales</string>
+    <string name="register" translatable="true">Register</string>
+    <string name="enter_name" translatable="true">Enter your full name</string>
+    <string name="enter_email" translatable="true">Enter email address</string>
+    <string name="create_password" translatable="true">Create password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="or">or</string>
+    <string name="sign_up_with_google">Sign up with google</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="log_in"><u>log in</u></string>
+    <string name="login_btn">login</string>
+    <string name="dont_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="login_with_google">login with google</string>
+    <string name="enter_password">Enter password</string>
+    <string name="logout">LOGOUT</string>
+    <string name="OpenDrawer">Open navigation Drawer</string>
+    <string name="CloseDrawer">Close navigation Drawer</string>
+    <string name="invoice">Invoice</string>
+    <string name="stocks">Stocks</string>
+    <string name="home">Home</string>
+    <string name="insights">Insights</string>
+    <string name="logs">Logs</string>
+    <string name="warning"><b><i>Warning</i></b> : Selling at a loss!, Please review Rate.</string>
+</resources>

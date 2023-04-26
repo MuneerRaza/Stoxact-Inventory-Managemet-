@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".Dashboard">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/nav_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/my_nav" />
+        <LinearLayout
+            android:id="@+id/nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:paddingTop="8sp"
+            android:paddingBottom="8sp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/home_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:orientation="horizontal"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:gravity="center"
+                android:background="@drawable/botton_nav_btn"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/home_btn_pic"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginBottom="1sp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/home_btn_pic"
+                    android:contentDescription="@string/image" />
+
+                <TextView
+                    android:id="@+id/home_btn_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:text="@string/home"
+                    android:textColor="#1194AA"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/stock_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:orientation="horizontal"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:gravity="center"
+                android:background="#00000000"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/stock_btn_pic"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginBottom="1sp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/stock_btn_pic"
+                    android:contentDescription="@string/image" />
+
+                <TextView
+                    android:id="@+id/stock_btn_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:text="@string/stocks"
+                    android:textColor="#1194AA"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/invoice_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:orientation="horizontal"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:gravity="center"
+                android:background="#00000000"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/invoice_btn_pic"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginBottom="1sp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/invoice_btn_pic"
+                    android:contentDescription="@string/image" />
+
+                <TextView
+                    android:id="@+id/invoice_btn_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:text="@string/invoice"
+                    android:textColor="#1194AA"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/insights_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:orientation="horizontal"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:gravity="center"
+                android:background="#00000000"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/insight_btn_pic"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginBottom="1sp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/insight_btn_pic"
+                    android:contentDescription="@string/image" />
+
+                <TextView
+                    android:id="@+id/insight_btn_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:text="@string/insights"
+                    android:textColor="#1194AA"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/logs_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:orientation="horizontal"
+                android:paddingStart="5sp"
+                android:paddingEnd="5sp"
+                android:gravity="center"
+                android:background="#00000000"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/logs_btn_pic"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_marginBottom="1sp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/logs_btn_pic"
+                    android:contentDescription="@string/image" />
+
+                <TextView
+                    android:id="@+id/logs_btn_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:text="@string/logs"
+                    android:textColor="#1194AA"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                     />
+            </LinearLayout>
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:visibility="gone"
+        android:id="@+id/side_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

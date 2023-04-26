@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "558768563196",
+    "firebase_url": "https://stoxact-default-rtdb.firebaseio.com",
+    "project_id": "stoxact",
+    "storage_bucket": "stoxact.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558768563196:android:d70d103d839611ad9f0879",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558768563196-oip4627navfql7ciceqfovpdho0164mu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project",
+            "certificate_hash": "eeea6a03ae1aa7041f27a0eb13341069fd8fdf3e"
+          }
+        },
+        {
+          "client_id": "558768563196-ukgpt31657ntnvgmmvgm9ld5ucuku5bo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvNJlMrt2yse_gijGgJfZOnNXipqBoqlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558768563196-ukgpt31657ntnvgmmvgm9ld5ucuku5bo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
