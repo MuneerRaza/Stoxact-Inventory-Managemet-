@@ -18,12 +18,12 @@ public class DataBase {
     public DataBase(String username) {
         FirebaseDatabase instance = FirebaseDatabase.getInstance();
         username = username.split("\\.")[0];
-        instance.setPersistenceEnabled(true);
+//        instance.setPersistenceEnabled(true);
         this.username = username;
         stockData = instance.getReference("stock").child(username);
         logsData = instance.getReference("logs").child(username);
-        stockData.keepSynced(true);
-        logsData.keepSynced(true);
+//        stockData.keepSynced(true);
+//        logsData.keepSynced(true);
     }
     public String addItem(Item item){
         assert item!=null;
