@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.project.R;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class LogsAdapter extends RecyclerView.Adapter<LogsAdapter.ViewHolder>{
     Context context;
@@ -20,6 +21,7 @@ public class LogsAdapter extends RecyclerView.Adapter<LogsAdapter.ViewHolder>{
 
     public LogsAdapter(Context context, ArrayList<Log> logs) {
         this.context = context;
+        Collections.reverse(logs);
         this.logs = logs;
     }
 

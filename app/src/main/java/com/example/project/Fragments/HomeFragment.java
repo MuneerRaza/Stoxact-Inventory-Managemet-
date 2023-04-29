@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,7 +54,12 @@ public class HomeFragment extends Fragment {
         View view = binding.getRoot();
 
         // Run the graph() method on a separate thread
-        graph(view);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                graph(view);
+            }
+        }, 100);
 
         // Get the current FirebaseUser and update UI with display name
         FirebaseAuth auth = FirebaseAuth.getInstance();
@@ -114,13 +120,9 @@ public class HomeFragment extends Fragment {
         long price = 0;
 
 
-
-
         ArrayList<String> daysOfWeek = getDaysOfWeek();
-        System.out.println("hel");
         for (int i = 0; i < daysOfWeek.size(); i++) {
             String day = daysOfWeek.get(i);
-            System.out.println("hel1");
             price = 0;
             for (int j = 0; j < logs.size(); j++) {
                 Log log = logs.get(j);

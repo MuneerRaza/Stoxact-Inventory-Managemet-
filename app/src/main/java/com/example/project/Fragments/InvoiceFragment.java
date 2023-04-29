@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.project.Dashboard;
 import com.example.project.Helper.InvoiceAdapter;
 import com.example.project.Helper.Item;
+import com.example.project.Helper.Log;
 import com.example.project.R;
 
 import java.time.LocalDateTime;
@@ -64,24 +65,33 @@ public class InvoiceFragment extends Fragment {
         purchaseBtn.setOnClickListener(view12 -> {
             purchaseBtn.setEnabled(false);
             String date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("E, MMM dd yyyy")).trim();
-
+            ArrayList<Item> qty = new ArrayList<>();
+            ArrayList<Item> qty0 = new ArrayList<>();
             for (Item x: items) {
                 Item si = Dashboard.userData.getItem(x.getName());
                 int siqty = si.getQty();
                 System.out.println(siqty);
-                int qty = siqty-x.getQty();
-                System.out.println(qty);
-//                if(qty == 0){
-//                    Dashboard.userData.deleteItem(si);
-//                }else{
-//                    si.setQty(qty);
-//                    Dashboard.userData.updateItem(si);
-//                }
-//                Log log = new Log(date, x);
-//                Dashboard.userData.addLog(log);
+                int q = siqty-x.getQty();
+                if(q == 0){
+                    qty0.add(si);
+                }else{
+                    si.setQty(q);
+                    qty.add(si);
+                }
+                Log log = new Log(date, x);
+                Dashboard.userData.addLog(log);
             }
-//            items.clear();
-//            adapter.notifyItemRemoved(0);
+            for (Item i :
+                    qty) {
+                Dashboard.userData.updateItem(i);
+            }
+            for (Item i :
+                    qty0) {
+                Dashboard.userData.deleteItem(i);
+            }
+            int size = items.size();
+            items.clear();
+            adapter.notifyItemRangeRemoved(0,size);
             TextView total = view.findViewById(R.id.total);
             total.setText("Total: 0 Rs");
             purchaseBtn.setEnabled(true);
