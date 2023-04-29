@@ -2,11 +2,15 @@
     <string name="app_name" translatable="true">Stoxact</string>
     <string name="image" translatable="true">Image</string>
     <string name="setup_completed" translatable="true">Enjoy Stoxact</string>
-    <string name="slider_string3" translatable="true">Let All your Inventory Managed and Start new journey with Stoxact</string>
     <string name="welcome_to_stoxact" translatable="true">Welcome to stoXact</string>
-    <string name="low_stocks" translatable="true">Low Stocks Alert</string>
+    <string name="h1" translatable="true">Generate invoice</string>
+    <string name="h2" translatable="true">Keeps record</string>
+    <string name="h3" translatable="true">Gives Overview</string>
     <string name="slider_string1" translatable="true">This app is an inventory management system designed for businesses to monitor and manage their stock levels.</string>
-    <string name="slider_string2" translatable="true">Stoxact will notify you when stocks are getting low</string>
+    <string name="slider_string2" translatable="true">Help to generate invoice of your sales</string>
+    <string name="slider_string3" translatable="true">keeps record of all of your sales through logs</string>
+    <string name="slider_string4" translatable="true">Gives an overview of weekly sales</string>
+    <string name="slider_string5" translatable="true">Let All your Inventory Managed and Start new journey with Stoxact</string>
     <string name="get_started" translatable="true">Get Started</string>
     <string name="tag_line" translatable="true">Let’s manage your stock and keep track of your sales</string>
     <string name="register" translatable="true">Register</string>

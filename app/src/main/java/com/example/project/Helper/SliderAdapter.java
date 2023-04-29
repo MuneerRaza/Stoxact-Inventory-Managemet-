@@ -16,9 +16,9 @@ import com.example.project.R;
 
 public class SliderAdapter extends RecyclerView.Adapter<SliderAdapter.ViewHolder>{
 
-    int[] imgs = {R.drawable.slider_img1,R.drawable.completed,R.drawable.completed};
-    int[] headings = {R.string.welcome_to_stoxact, R.string.low_stocks, R.string.setup_completed};
-    int[] desc = {R.string.slider_string1, R.string.slider_string2, R.string.slider_string3};
+    int[] imgs = {R.drawable.slider_img1, R.drawable.invoicee, R.drawable.record_slide, R.drawable.overview_slide,R.drawable.completed};
+    int[] headings = {R.string.welcome_to_stoxact, R.string.h1, R.string.h2, R.string.h3, R.string.setup_completed};
+    int[] desc = {R.string.slider_string1, R.string.slider_string2, R.string.slider_string3, R.string.slider_string4, R.string.slider_string5};
     Context context;
 
     public class ViewHolder extends RecyclerView.ViewHolder{

@@ -84,7 +84,7 @@
             android:id="@+id/dot2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3sp"
+            android:layout_marginStart="3sp"
             android:background="@drawable/dot"
             android:contentDescription="@string/image"
             tools:ignore="SmallSp" />
@@ -93,6 +93,25 @@
             android:id="@+id/dot3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="3sp"
+            android:background="@drawable/dot"
+            android:contentDescription="@string/image"
+            tools:ignore="SmallSp" />
+
+        <ImageView
+            android:id="@+id/dot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3sp"
+            android:background="@drawable/dot"
+            android:contentDescription="@string/image"
+            tools:ignore="SmallSp" />
+
+        <ImageView
+            android:id="@+id/dot5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3sp"
             android:background="@drawable/dot"
             android:contentDescription="@string/image"
             tools:ignore="SmallSp" />

@@ -18,7 +18,7 @@ public class OnBoarding extends AppCompatActivity {
     ImageView[] dots;
     Button get_started_btn;
     FloatingActionButton next_btn;
-    private static final int NO_OF_SLIDES = 3;
+    private static final int NO_OF_SLIDES = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,8 @@ public class OnBoarding extends AppCompatActivity {
         dots[0] = findViewById(R.id.dot1);
         dots[1] = findViewById(R.id.dot2);
         dots[2] = findViewById(R.id.dot3);
+        dots[3] = findViewById(R.id.dot4);
+        dots[4] = findViewById(R.id.dot5);
         dots[0].setImageResource(R.drawable.dot_colored);
         viewPager.setAdapter(new SliderAdapter(getApplicationContext()));
 
